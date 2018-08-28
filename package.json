@@ -1,5 +1,5 @@
 {
-  "name": "render-furigana-html",
+  "name": "deconstruct-japanese",
   "version": "1.0.0",
   "description": "Render Japanese text to an array of objects specifying kanji and relevant furigana.",
   "main": "index.js",

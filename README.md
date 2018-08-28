@@ -7,9 +7,9 @@ Render Japanese text to an array of objects specifying kanji and relevant furiga
 
 ## Examples
 ```js
-const renderFurigana = require('render-furigana');
+const deconstructJapanese = require('deconstruct-japanese');
 
-renderFurigana('私達は、製品の品質において、業界基準を大きく上回っています').then(arrayOfObjects => {
+deconstructJapanese('私達は、製品の品質において、業界基準を大きく上回っています').then(arrayOfObjects => {
   console.log(arrayOfObjects);
   /*
   [ { kanji: '私', furigana: 'わたし' },
