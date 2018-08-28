@@ -1,14 +1,14 @@
 {
-  "name": "render-furigana",
-  "version": "1.0.4",
-  "description": "Render Japanese text with furigana into a PNG buffer.",
+  "name": "render-furigana-html",
+  "version": "1.0.0",
+  "description": "Render Japanese text to HTML.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mistval/render_furigana.git"
+    "url": "git+https://github.com/andrewkfiedler/render_furigana_html.git"
   },
   "keywords": [
     "japanese",
@@ -21,6 +21,10 @@
     "kana"
   ],
   "author": "Randall Schmidt",
+  "contributors": [
+    "Randall Schmidt",
+    "Andrew Fiedler"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mistval/render_furigana/issues"

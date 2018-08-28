@@ -1,9 +1,9 @@
+Built upon the foundation of https://github.com/mistval/render_furigana#readme
+
 # Render Furigana
-Render Japanese text with furigana to a PNG buffer.
+Render Japanese text with furigana to HTML.
 
 You can specify the furigana yourself, or you can have the script do it automatically, using kuroshiro.
-
-Cairo is required for image rendering. If you don't have it installed, see canvas' page for instructions: https://www.npmjs.com/package/canvas
 
 ## Examples
 ```js
