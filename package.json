@@ -1,11 +1,8 @@
 {
   "name": "render-furigana-html",
   "version": "1.0.0",
-  "description": "Render Japanese text to HTML.",
+  "description": "Render Japanese text to an array of objects specifying kanji and relevant furigana.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrewkfiedler/render_furigana_html.git"
@@ -14,11 +11,9 @@
     "japanese",
     "kanji",
     "furigana",
-    "render",
-    "png",
-    "buffer",
     "hiragana",
-    "kana"
+    "kana",
+    "convert"
   ],
   "author": "Randall Schmidt",
   "contributors": [
@@ -27,9 +22,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mistval/render_furigana/issues"
+    "url": "https://github.com/andrewkfiedler/render_furigana_html/issues"
   },
-  "homepage": "https://github.com/mistval/render_furigana#readme",
+  "homepage": "https://github.com/andrewkfiedler/render_furigana_html#readme",
   "dependencies": {
     "htmlparser": "^1.7.7",
     "kuroshiro": "^0.2.4"

@@ -1,9 +1,5 @@
 const assert = require('assert');
-
-const HAIR_SPACE = '\u200A';
-
 const kuroshiro = require('kuroshiro');
-
 const htmlparser = require('htmlparser');
 
 // Initialize kuroshiro
