@@ -1,20 +1,8 @@
-const assert = require('assert');
 let analyzer = require('kuroshiro-analyzer-kuromoji');
 let kuroshiro = require('kuroshiro');
 const htmlparser = require('htmlparser');
 analyzer = new analyzer();
 kuroshiro = new kuroshiro();
-
-// Initialize kuroshiro
-const kuroshiroInit = new Promise((fulfill, reject) => {
-  if (kuroshiro) {
-    kuroshiro.init(analyzer).then(() => {
-      fulfill();
-    });
-  } else {
-    fulfill();
-  }
-});
 
 function extractFurigana(text) {
   return kuroshiro.init(analyzer).then(() => {
@@ -88,13 +76,12 @@ function splitNonFuriganaChunks(chunks) {
 }
 
 module.exports = function(text) {
-  assert(text, 'No text provided. You must provide a string or an array of {kanji:xx, furigana:xx}');
   if (typeof text === typeof '') {
     return extractFurigana(text).then(rawChunks => {
       rawChunks = splitNonFuriganaChunks(rawChunks);
       return rawChunks;
     });
   } else {
-    return text;
+    return [];
   }
 }
