@@ -27,6 +27,7 @@
   "homepage": "https://github.com/andrewkfiedler/render_furigana_html#readme",
   "dependencies": {
     "htmlparser": "^1.7.7",
-    "kuroshiro": "^0.2.4"
+    "kuroshiro": "1.1.1",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0"
   }
 }

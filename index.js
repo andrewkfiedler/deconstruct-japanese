@@ -1,16 +1,15 @@
 const assert = require('assert');
-const kuroshiro = require('kuroshiro');
+let analyzer = require('kuroshiro-analyzer-kuromoji');
+let kuroshiro = require('kuroshiro');
 const htmlparser = require('htmlparser');
+analyzer = new analyzer();
+kuroshiro = new kuroshiro();
 
 // Initialize kuroshiro
 const kuroshiroInit = new Promise((fulfill, reject) => {
   if (kuroshiro) {
-    kuroshiro.init(err => {
-      if (err) {
-        reject(err);
-      } else {
-        fulfill();
-      }
+    kuroshiro.init(analyzer).then(() => {
+      fulfill();
     });
   } else {
     fulfill();
@@ -18,9 +17,10 @@ const kuroshiroInit = new Promise((fulfill, reject) => {
 });
 
 function extractFurigana(text) {
-  return kuroshiroInit.then(() => {
+  return kuroshiro.init(analyzer).then(() => {
+    return kuroshiroResults = kuroshiro.convert(text, {mode: 'furigana'})
+  }).then((kuroshiroResults) => {
     // Call into kuroshiro to get the furigana for the input text.
-    let kuroshiroResults = kuroshiro.convert(text, {mode: 'furigana'});
     let parseHandler = new htmlparser.DefaultHandler(function(error, dom) {});
     let parser = new htmlparser.Parser(parseHandler);
     parser.parseComplete(kuroshiroResults);

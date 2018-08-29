@@ -8,6 +8,17 @@ async@^2.0.1:
   dependencies:
     lodash "^4.17.10"
 
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
+
+core-js@^2.4.0:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+
 doublearray@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/doublearray/-/doublearray-0.0.2.tgz#63186fe8d34413276d3621f6aa0ec5f79e227ef9"
@@ -16,7 +27,7 @@ htmlparser@^1.7.7:
   version "1.7.7"
   resolved "https://registry.yarnpkg.com/htmlparser/-/htmlparser-1.7.7.tgz#19e7b3997ff6fbac99ae5a7d2766489efe7e2d0e"
 
-kuromoji@0.1.x:
+kuromoji@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/kuromoji/-/kuromoji-0.1.2.tgz#293f0d6706df006112137980588d5daac26d0790"
   dependencies:
@@ -24,20 +35,25 @@ kuromoji@0.1.x:
     doublearray "0.0.2"
     zlibjs "^0.3.1"
 
-kuroshiro@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/kuroshiro/-/kuroshiro-0.2.4.tgz#8c51c76b02cc5b5f1bc2956489d7ae050adb3f28"
+kuroshiro-analyzer-kuromoji@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/kuroshiro-analyzer-kuromoji/-/kuroshiro-analyzer-kuromoji-1.1.0.tgz#c4b1715d92896e02ccd89194d31910f8b1c109d2"
   dependencies:
-    kuromoji "0.1.x"
-    wanakana "^3.0.0"
+    kuromoji "^0.1.1"
+
+kuroshiro@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/kuroshiro/-/kuroshiro-1.1.1.tgz#7bc3516c409bee2ce01538a394920cb0c1d51353"
+  dependencies:
+    babel-runtime "^6.26.0"
 
 lodash@^4.17.10:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
-wanakana@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/wanakana/-/wanakana-3.1.1.tgz#6c87887ff79cafce923136c3aa87e069c60b0dce"
+regenerator-runtime@^0.11.0:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
 zlibjs@^0.3.1:
   version "0.3.1"
