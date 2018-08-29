@@ -1,8 +1,8 @@
 {
   "name": "deconstruct-japanese",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Render Japanese text to an array of objects specifying kanji and relevant furigana.",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andrewkfiedler/render_furigana_html.git"
